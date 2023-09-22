@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:src="@drawable/back"
+        android:scaleType="fitXY"
+       />
+
+
+         <ImageView
+             android:layout_width="30sp"
+             android:layout_height="30sp"
+             android:src="@drawable/bar"
+             android:layout_margin="10sp"
+             />
+    <TextView
+        android:id="@+id/nagad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="নগদ"
+        android:layout_marginTop="40sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        />
+<LinearLayout
+    android:layout_width="210sp"
+    android:layout_height="35sp"
+    android:background="@drawable/squre_circul"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/nagad"
+    android:orientation="horizontal"
+    >
+    <ImageView
+        android:layout_width="30sp"
+        android:layout_height="25sp"
+        android:layout_marginLeft="8sp"
+        android:src="@drawable/blogo"
+        />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="35sp"
+    android:text="ব্যালেন্স জানতে ট্যাপ করুন"
+    android:gravity="center"
+    android:textColor="#f25623"
+    android:textSize="15sp"
+/>
+
+</LinearLayout>
+    <ImageView
+        android:layout_width="30sp"
+        android:layout_height="40sp"
+        android:src="@drawable/niti"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10sp"
+        />
+
+<!--..............6 buttons................................................-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="360sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="160sp"
+        android:layout_marginRight="20sp"
+        android:background="@drawable/squre_circul"
+        android:orientation="vertical" >
+        <!--..............6 buttons...........up.....................................-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120sp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/cash_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp"
+                   android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/cash_in"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="এম টু পি"
+                    android:layout_below="@+id/cash_in"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#676565"
+                    android:textSize="15sp"
+                    />
+
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#999999"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginBottom="10sp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/setelment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50sp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/setelment"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="সেটেলমেন্ট"
+                        android:layout_below="@+id/setelment"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#676565"
+                        android:textSize="15sp"
+                        />
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <!--..............4 buttons.............bottom...................................-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120sp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#999999"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    />
+
+                <ImageView
+                    android:id="@+id/sadin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/sadin"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sadin"
+                    android:layout_centerHorizontal="true"
+                    android:text="স্বাধীন"
+                    android:textColor="#676565"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#999999"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        />
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#999999"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginBottom="10sp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/nibindon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50sp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/nibindon"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="নিবন্ধন"
+                        android:layout_below="@+id/nibindon"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#676565"
+                        android:textSize="15sp"
+                        />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120sp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#999999"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    />
+
+                <ImageView
+                    android:id="@+id/biboroni"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/biboroni"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80sp"
+                    android:layout_below="@+id/biboroni"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="3dp"
+                    android:text="বিবরণ"
+                    android:textColor="#676565"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#999999"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        />
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#999999"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginBottom="10sp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/bill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50sp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/bill"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="বিল পে"
+                        android:layout_below="@+id/bill"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#676565"
+                        android:textSize="15sp"
+                        />
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+        </LinearLayout>
+   </RelativeLayout>
+
+
